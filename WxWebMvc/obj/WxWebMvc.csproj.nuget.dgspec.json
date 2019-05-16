@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "restore": {
+    "d:\\VsCodePro\\WebApp\\WxWebMvc\\WxWebMvc.csproj": {}
+  },
+  "projects": {
+    "d:\\VsCodePro\\WebApp\\WxWebMvc\\WxWebMvc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\VsCodePro\\WebApp\\WxWebMvc\\WxWebMvc.csproj",
+        "projectName": "WxWebMvc",
+        "projectPath": "d:\\VsCodePro\\WebApp\\WxWebMvc\\WxWebMvc.csproj",
+        "packagesPath": "C:\\Users\\jion\\.nuget\\packages\\",
+        "outputPath": "d:\\VsCodePro\\WebApp\\WxWebMvc\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jion\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlserver": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "axios": {
+              "target": "Package",
+              "version": "[0.16.2, )"
+            },
+            "vue": {
+              "target": "Package",
+              "version": "[2.5.17, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

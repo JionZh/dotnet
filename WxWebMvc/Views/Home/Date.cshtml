@@ -1,0 +1,67 @@
+@{
+Layout = null;
+}
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>vuetest</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src='https://unpkg.com/vue@2.0.5/dist/vue.js'></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div>
+            <h1>Vue demo</h1>
+            <div>
+                <div>{{datenow}}</div>
+                <div>{{message}}</div>
+                <input type="text" v-model="message">
+            </div>
+        </div>
+        <div>
+            <input type="date" v-model="datenow" />
+        </div>
+        <div>
+            <input type="time" value="13:59" />
+        </div>
+
+    </div>
+
+    <script>
+
+        new Vue({
+            el: '#app',
+            data: {
+                message: 'hello vue.js.',
+                datenow: "2019-05-14"
+            },
+            created: function () {
+                console.log('created');
+            },
+            mounted: function () {
+                console.log('mounted');
+                this.getinfo();
+            },
+            methods: {
+                getinfo: function () {
+                    axios.get('http://www.betpos.cn/netcore/api/values/users/')
+                        .then(function (response) {
+                            console.log(response);
+                        })
+                        .catch(function (error) {
+                            console.log(error);
+                        });
+                },
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>
